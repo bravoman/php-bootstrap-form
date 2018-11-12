@@ -29,7 +29,7 @@ function PFBC_Load ($class) {
     if(is_file ($file))
         include_once $file;
 }
-spl_autoload_register("PFBC_Load");
+spl_autoload_register("\PFBC\PFBC_Load");
 
 class Form extends Base {
     public static $SUBMIT = 99;
