@@ -63,10 +63,10 @@ class Form extends Base {
         /*The Standard view class is applied by default and will be used unless a different view is
         specified in the form's configure method*/
         if(empty($this->view))
-            $this->view = new View_SideBySide;
+            $this->view = new \View_SideBySide;
 
         if(empty($this->errorView))
-            $this->errorView = new ErrorView_Standard;
+            $this->errorView = new \ErrorView_Standard;
 
         /*The resourcesPath property is used to identify where third-party resources needed by the
         project are located.  This property will automatically be set properly if the PFBC directory
@@ -436,7 +436,7 @@ JS;
 
     public function addElements ($items) {
         foreach ($items as $id => $props) {
-            $elementClassName = "Element_" . $props[0];
+            $elementClassName = "\Element_" . $props[0];
             for ($i = 1; $i<=4;$i++)
                 if (!isset ($props[$i])) $props[$i] = null;
             $element = new $elementClassName ($props[1], $props[2], $props[3], $props[4]);
@@ -484,7 +484,7 @@ JS;
                 $default['ajax'] = 1;
                 $default['ajaxCallback']= $opts['ajax'];
             } else if ($key == 'view') {
-                $viewName = 'View_' . $val;
+                $viewName = '\View_' . $val;
                 $default[$key] = new $viewName;
             } else
                 $default[$key] = $val;
@@ -529,7 +529,7 @@ JS;
     }
 
     private static function _call ($form, $type, $props) {
-        $elementClassName = "Element_$type";
+        $elementClassName = "\Element_$type";
         for ($i = 0; $i<=3;$i++)
             if (!isset ($props[$i])) $props[$i] = null;
 
