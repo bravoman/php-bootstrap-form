@@ -123,7 +123,7 @@ class Form extends \Base {
         return array("_attributes", "_elements", "errorView");
     }
 
-    public function addElement(Element $element) {
+    public function addElement(\Element $element) {
         $element->_setForm($this);
 
         //If the element doesn't have a specified id, a generic identifier is applied.
@@ -137,7 +137,7 @@ class Form extends \Base {
 
         /*For ease-of-use, the form tag's encytype attribute is automatically set if the File element
         class is added.*/
-        if($element instanceof Element_File)
+        if($element instanceof \Element_File)
             $this->_attributes["enctype"] = "multipart/form-data";
     }
 
@@ -232,7 +232,7 @@ class Form extends \Base {
 
                     /*The File element must be handled differently b/c it uses the $_FILES superglobal and
                     not $_GET or $_POST.*/
-                    if($element instanceof Element_File)
+                    if($element instanceof \Element_File)
                         $data[$name] = $_FILES[$name]["name"];
 
                     if(isset($data[$name])) {
