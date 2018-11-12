@@ -31,6 +31,43 @@ function PFBC_Load ($class) {
 }
 spl_autoload_register("\PFBC\PFBC_Load");
 
+/**
+ * Class Form
+ * @method static Button($label, $name, array $properties = null)
+ * @method static CKEditor($label, $name, array $properties = null)
+ * @method static Captcha($label, $name, array $properties = null)
+ * @method static Checkbox($label, $name, array $properties = null)
+ * @method static Checksort($label, $name, array $properties = null)
+ * @method static Color($label, $name, array $properties = null)
+ * @method static Country($label, $name, array $properties = null)
+ * @method static Date($label, $name, array $properties = null)
+ * @method static DateTime($label, $name, array $properties = null)
+ * @method static DateTimeLocal($label, $name, array $properties = null)
+ * @method static Email($label, $name, array $properties = null)
+ * @method static File($label, $name, array $properties = null)
+ * @method static HTML($label, $name, array $properties = null)
+ * @method static Hidden($name, array $properties = null)
+ * @method static Month($label, $name, array $properties = null)
+ * @method static Number($label, $name, array $properties = null)
+ * @method static Password($label, $name, array $properties = null)
+ * @method static Phone($label, $name, array $properties = null)
+ * @method static Radio($label, $name, array $properties = null)
+ * @method static Range($label, $name, array $properties = null)
+ * @method static Search($label, $name, array $properties = null)
+ * @method static Select($label, $name, array $properties = null)
+ * @method static Sort($label, $name, array $properties = null)
+ * @method static SpanStart($label, $name, array $properties = null)
+ * @method static State($label, $name, array $properties = null)
+ * @method static Textarea($label, $name, array $properties = null)
+ * @method static Textbox($label, $name, array $properties = null)
+ * @method static Time($label, $name, array $properties = null)
+ * @method static TinyMCE($label, $name, array $properties = null)
+ * @method static Url($label, $name, array $properties = null)
+ * @method static Week($label, $name, array $properties = null)
+ * @method static YesNo($label, $name, array $properties = null)
+ * @method static jQueryUIDate($label, $name, array $properties = null)
+ * @package PFBC
+ */
 class Form extends \Base {
     public static $SUBMIT = 99;
     protected $_elements = array();

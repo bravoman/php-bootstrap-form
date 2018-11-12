@@ -1,4 +1,5 @@
 <?php
+use \PFBC\Form;
 abstract class FormView extends Base {
     public $noLabel = false;
     protected $_form;
