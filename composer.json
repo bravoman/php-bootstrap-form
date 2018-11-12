@@ -1,21 +1,26 @@
 {
-	"name": "avbdr/php-bootstrap-form",
+	"name": "bravoman/php-bootstrap-form",
 	"description": "PHP Bootstrap Form Helper",
 	"license": "MIT",
     "authors": [
-        {
-            "name": "Alexander V. Butenko",
-            "email": "a.butenka@gmail.com",
-            "homepage": "http://smarttechdo.com",
-            "role": "Developer"
-        },
-        {
-            "name": "Andrew Porterfield",
-            "email": "ajporterfield@gmail.com",
-            "homepage": "http://code.google.com/p/php-form-builder-class/",
-            "role": "Initial Developer"
-        }
-
+      {
+        "name": "Tom Niessink",
+        "email": "tommybravo@hotmail.com",
+        "homepage": "https://elobbies.com",
+        "role": "Developer"
+      },
+      {
+        "name": "Alexander V. Butenko",
+        "email": "a.butenka@gmail.com",
+        "homepage": "http://smarttechdo.com",
+        "role": "Developer"
+      },
+      {
+          "name": "Andrew Porterfield",
+          "email": "ajporterfield@gmail.com",
+          "homepage": "http://code.google.com/p/php-form-builder-class/",
+          "role": "Initial Developer"
+      }
     ],
 	"require": {
 		"php": ">=5.3.0"
