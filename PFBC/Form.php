@@ -22,6 +22,7 @@ Copyright (c) 2015-2016 Alexander V. Butenko
 
 Version: 4.1-master
 */
+namespace PFBC;
 
 function PFBC_Load ($class) {
     $file = dirname (__FILE__) . "/" . str_replace("_", DIRECTORY_SEPARATOR, $class) . ".php";
