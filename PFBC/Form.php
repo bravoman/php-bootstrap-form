@@ -31,7 +31,7 @@ function PFBC_Load ($class) {
 }
 spl_autoload_register("\PFBC\PFBC_Load");
 
-class Form extends Base {
+class Form extends \Base {
     public static $SUBMIT = 99;
     protected $_elements = array();
     protected $_prefix = "http";
