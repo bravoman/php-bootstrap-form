@@ -1,4 +1,5 @@
 <?php
+use PFBC\Form;
 abstract class Element extends Base {
     protected $_errors = array();
     protected $_attributes = array();
