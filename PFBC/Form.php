@@ -327,7 +327,7 @@ class Form extends \Base {
             $form->errorView->renderAjaxErrorResponse();
     }
 
-    protected function renderCSS() {
+    public function renderCSS() {
         $this->renderCSSFiles();
 
         echo '<style type="text/css">';
@@ -354,7 +354,7 @@ class Form extends \Base {
         }
     }
 
-    protected function renderJS() {
+    public function renderJS() {
         $this->renderJSFiles();
 
         echo '<script type="text/javascript">';
