@@ -143,7 +143,7 @@ class Form extends \Base {
 
     /*Values that have been set through the setValues method, either manually by the developer
     or after validation errors, are applied to elements within this method.*/
-    protected function applyValues() {
+    public function applyValues() {
         foreach($this->_elements as $element) {
             $name = $element->getAttribute("name");
             if(isset($this->_values[$name]))
